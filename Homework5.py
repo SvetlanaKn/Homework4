@@ -1,13 +1,13 @@
-print('Приветствуем вас в калькуляторе Python')
-print("Для завершения 'stop' в строке operation")
+print('РџСЂРёРІРµС‚СЃС‚РІСѓРµРј РІР°СЃ РІ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂРµ Python')
+print("Р”Р»СЏ Р·Р°РІРµСЂС€РµРЅРёСЏ 'stop' РІ СЃС‚СЂРѕРєРµ operation")
 
+count = 0
 while True:
-    count = 0
     operation = input("Enter operation(*, /, +, -) =  ")
     if operation == 'stop':
         break
     if operation not in ('*', '/', '+', '-'):
-        print("Введите правильно знак")
+        print("Р’РІРµРґРёС‚Рµ РїСЂР°РІРёР»СЊРЅРѕ Р·РЅР°Рє")
         continue
     try:
         number_one = float(input("Enter first number =  "))
@@ -26,16 +26,16 @@ while True:
             if number_two != 0:
                 print('Equal =', number_one / number_two)
             else:
-                print("Деление на ноль!")
+                print("Р”РµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ!")
             print(count)
         print(count)
     except NameError:
-        print("Неправильный тип данных")
+        print("РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ С‚РёРї РґР°РЅРЅС‹С…")
     except IndentationError:
-        print("Неправильный тип данных")
+        print("РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ С‚РёРї РґР°РЅРЅС‹С…")
     except TypeError:
-        print("Неправильный тип данных")
+        print("РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ С‚РёРї РґР°РЅРЅС‹С…")
     except ValueError:
-        print("Неправильный тип данных")
+        print("РќРµРїСЂР°РІРёР»СЊРЅС‹Р№ С‚РёРї РґР°РЅРЅС‹С…")
     finally:
-        print("Ответ получен")
+        print("РћС‚РІРµС‚ РїРѕР»СѓС‡РµРЅ")
